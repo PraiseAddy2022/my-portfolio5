@@ -22,5 +22,5 @@ jobs:
         run: docker build -t PraiseAddy2022/portfolio .
       - name: push image
         run: |
-          docker login -u PraiseAddy2022 -p ${{secrets.REGISTRY_USERNAME}}
+          docker login -u PraiseAddy2022 -p ${{secrets.REGISTRY_PASSWORD}}
           docker push PraiseAddy2022/portfolio
