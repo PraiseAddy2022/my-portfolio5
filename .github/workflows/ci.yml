@@ -19,8 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build image
-        run: docker build -t PraiseAddy2022/portfolio .
+        run: docker build -t PraiseAddy2022/portfolio5 .
       - name: push image
         run: |
           docker login -u PraiseAddy2022 -p ${{secrets.REGISTRY_PASSWORD}}
-          docker push PraiseAddy2022/portfolio
+          docker push PraiseAddy2022/portfolio5
